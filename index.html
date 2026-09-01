@@ -1,83 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Alien Abduction Order Form</title>
-	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-	<link href="css/forms.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Juan Camilo Tibaquira Montoya — Backend-Focused Software Engineer. Portfolio, projects, experience and technical background.">
+  <meta name="theme-color" content="#070b17">
+  <title>Juan Camilo Tibaquira — Backend Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<div class="wrapper">
-		<section>
-			<h1>Alien Abduction Order Form</h1>
-			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
-		<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
-			 <input type="hidden" name="send_to" value="juan.tibaquira24@gmail.com">
-			<fieldset>
-				<legend>Your contact information</legend>
-				<label for="name">Your name </label>
-					<input type="text" id="name" name="name">
-				<label for="phone">Phone number</label>
-					<input type="tel" id="phone" name="phone" placeholder="Dont forget your area code!">
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email">
-			</fieldset>
+  <div class="stars stars-a" aria-hidden="true"></div>
+  <div class="stars stars-b" aria-hidden="true"></div>
+  <div class="stars stars-c" aria-hidden="true"></div>
 
-<fieldset>
-	<legend>About your abduction </legend>
-	<label for="date">Requested  date</label>
-	<input type="date" id ="date" name="date">
-	<label for="qty">How many people would you like abducted?</label>
-	<input type="number" id ="qty" name="qty" min="1" max="10">
-	<p>What type of UFO do you prefer?</p>
-	<label>
-		<input type = radio name ="ufotype" value="classic" checked> Classic oval UFO
-	</label>
-	<label>
-		<input type = radio name ="ufotype" value="starwars"> Star Wars-style Imperial cruiser
-	</label>
-	<label>
-		<input type = radio name ="ufotype" value="viper"> Battlestar Galactica-style Viper
-	</label>
-	<label>
-		<input type = radio name ="ufotype" value="borg"> Borg-style cube
-	</label>
-	<label for="abtype">What type of abduction experience do you want?</label>
-		<select id="abtype" name="abtype">    
-			<option selected>Select one...</option>
-			<option value ="tour">Tour of the solar system</option>
-			<option value="dinner">Alien dinner and discussion</option>
-			<option value="dance">Alien dance lessons</option>
-			<option value="whales">Whale watching</option>
-	    </select>
-	<label for = "comments">Special requests:</label>
-	<textarea id = "comments" name="comments" placeholder ="Tell me everithing...">Enter your ideas here</textarea>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Juan Camilo Tibaquira home">
+      <span class="brand-mark">JT</span>
+      <span>JCTIBAQUIRAM</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-	<label>
-		<input type="checkbox" value="susbribe" name="subscribe" checked> add me to your email list!
-	</label>
+  <main id="top">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">MISSION 01 / SOFTWARE ENGINEERING</p>
+        <h1 id="hero-title">Building reliable software,<br><span>one system at a time.</span></h1>
+        <p class="hero-lead">
+          Backend-Focused Software Engineer with an engineering background and experience in data-intensive technical environments.
+          Currently focused on TypeScript, Node.js, PostgreSQL, APIs, Docker, and Linux.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore projects</a>
+          <a class="button button-ghost" href="https://www.linkedin.com/in/jctibaquiram/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a class="button button-ghost" href="https://github.com/jctibaquiram" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+        <div class="hero-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>OPEN TO WORK</span>
+          <span class="status-separator">·</span>
+          <span>MEDELLÍN / LATAM REMOTE</span>
+        </div>
+      </div>
 
+      <div class="orbital-system" aria-hidden="true">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+        <div class="planet">
+          <span class="planet-glow"></span>
+          <span class="planet-core"></span>
+        </div>
+        <div class="satellite satellite-1"><span></span></div>
+        <div class="satellite satellite-2"><span></span></div>
+        <div class="coordinate-label">04° 32' 19&quot; N<br>74° 04' 47&quot; W</div>
+      </div>
+    </section>
 
-</fieldset>
-	<button type="submit">Order your abduction experience!!!</button>
-		</form>
-		</section>
-		<aside>
-			<h3>Our Location</h3>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9492.279589609923!2d-93.27474822614728!3d44.98285646550058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3329a6e23a267%3A0x42412ff47609ca09!2s60%20South%206th%20St%2C%20Minneapolis%2C%20MN%2055402%2C%20EE.%20UU.!5e0!3m2!1ses!2sco!4v1780421275633!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			<address>
-				Frontend Masters &middot;
-				60 South 6th Street &middot;
-				Suite 3625 &middot;
-				Minneapolis, MN 55402
-			</address>
-		</aside>
-	</div>
-	<script src="js/forms.js"></script>
+    <section id="about" class="section-shell section-block">
+      <div class="section-heading">
+        <p class="eyebrow">MISSION 02</p>
+        <h2>About</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            My professional background started in Geological Engineering, where I spent more than five years working with technical, geospatial, and data-intensive workflows.
+          </p>
+          <p>
+            I am now deliberately moving into software engineering, with a strong interest in backend development, APIs, databases, containerization, and modern development workflows.
+          </p>
+        </div>
+        <div class="signal-panel">
+          <div class="signal-row"><span>FOCUS</span><strong>BACKEND</strong></div>
+          <div class="signal-row"><span>PRIMARY STACK</span><strong>TS / NODE / PG</strong></div>
+          <div class="signal-row"><span>INFRA</span><strong>DOCKER / LINUX</strong></div>
+          <div class="signal-row"><span>WORKFLOW</span><strong>GIT / AI-ASSISTED</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section-shell section-block">
+      <div class="section-heading">
+        <p class="eyebrow">MISSION 03</p>
+        <h2>Tech stack</h2>
+      </div>
+      <div class="stack-grid">
+        <article class="stack-card">
+          <span class="card-index">01</span>
+          <h3>Backend</h3>
+          <p>TypeScript, JavaScript, Node.js, Express.js, REST APIs</p>
+        </article>
+        <article class="stack-card">
+          <span class="card-index">02</span>
+          <h3>Data</h3>
+          <p>PostgreSQL, SQL, SQLite, Python, ETL workflows</p>
+        </article>
+        <article class="stack-card">
+          <span class="card-index">03</span>
+          <h3>Infrastructure</h3>
+          <p>Docker, Linux/WSL, Nginx, DigitalOcean</p>
+        </article>
+        <article class="stack-card">
+          <span class="card-index">04</span>
+          <h3>Tooling</h3>
+          <p>Git, GitHub, VS Code, Claude Code</p>
+        </article>
+      </div>
+      <p class="section-note">Current focus: deepen backend fundamentals and ship increasingly production-like projects.</p>
+    </section>
+
+    <section id="projects" class="section-shell section-block">
+      <div class="section-heading">
+        <p class="eyebrow">MISSION 04</p>
+        <h2>Projects</h2>
+      </div>
+      <article class="project-card featured-project">
+        <div class="project-number">PROJECT / 01</div>
+        <div class="project-main">
+          <div>
+            <h3>FullTiBaStack</h3>
+            <p class="project-subtitle">Full-Stack Web Application</p>
+          </div>
+          <a class="text-link" href="https://github.com/jctibaquiram/fulltibastack.me" target="_blank" rel="noreferrer">View repository ↗</a>
+        </div>
+        <p>
+          A full-stack application developed step by step during structured full-stack training. The project evolved from a Node.js HTTP server into a hands-on exploration of WebSockets, database logging, Docker, Linux/WSL, Nginx, Git/GitHub, and cloud deployment.
+        </p>
+        <div class="tag-row">
+          <span>Node.js</span><span>Express</span><span>WebSockets</span><span>SQLite</span><span>Docker</span><span>Linux</span><span>Nginx</span>
+        </div>
+      </article>
+      <div class="future-projects">
+        <div class="future-marker">NEXT MISSIONS</div>
+        <p>TypeScript + PostgreSQL API · Authentication · Testing · CI/CD · Backend architecture</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section-shell section-block">
+      <div class="section-heading">
+        <p class="eyebrow">MISSION 05</p>
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-meta"><span>2021 — PRESENT</span><span>AIM ENGINEERING</span></div>
+          <div class="timeline-content">
+            <h3>Geological Engineer</h3>
+            <p>Managed and analyzed technical and geotechnical data; built structured workflows, SQL-based analysis, ETL processes, and Power BI reporting to support technical and management decisions.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-meta"><span>2021</span><span>AIM INGENIEROS CIVILES</span></div>
+          <div class="timeline-content">
+            <h3>Engineering Intern</h3>
+            <p>Processed and organized technical field data, supporting data validation, quality control, and technical reporting.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-meta"><span>2020 — 2021</span><span>VIASTOP S.A.S.</span></div>
+          <div class="timeline-content">
+            <h3>Engineering Assistant</h3>
+            <p>Processed and validated technical data and supported documentation and analysis for engineering project deliverables.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell section-block split-block">
+      <div>
+        <p class="eyebrow">MISSION 06</p>
+        <h2>Engineering background</h2>
+        <p>
+          Geological Engineering taught me to work with complex systems, imperfect information, structured datasets, technical constraints, and evidence-based decision making. I now bring that mindset into software engineering.
+        </p>
+      </div>
+      <div class="education-card">
+        <span class="card-index">EDUCATION</span>
+        <h3>Universidad Nacional de Colombia</h3>
+        <p>Geological Engineering</p>
+        <span class="muted">Medellín, Colombia</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell section-block contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">MISSION 07</p>
+        <h2>Make contact</h2>
+      </div>
+      <p class="contact-lead">Open to junior backend and software engineering opportunities in Medellín and remote teams across Colombia and Latin America.</p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:juan.tibaquira24@gmail.com">
+          <span class="card-index">EMAIL</span>
+          <strong>juan.tibaquira24@gmail.com</strong>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/jctibaquiram/" target="_blank" rel="noreferrer">
+          <span class="card-index">LINKEDIN</span>
+          <strong>linkedin.com/in/jctibaquiram</strong>
+        </a>
+        <a class="contact-card" href="https://github.com/jctibaquiram" target="_blank" rel="noreferrer">
+          <span class="card-index">GITHUB</span>
+          <strong>github.com/jctibaquiram</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <span>JCTIBAQUIRAM</span>
+    <span>MISSION STATUS: BUILDING</span>
+    <span>© 2026</span>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
-
-
-
-
-
